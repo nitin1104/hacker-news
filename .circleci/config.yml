@@ -4,7 +4,7 @@ executors:
     docker:
       - image: circleci/node:10
 orbs:
-  heroku: circleci/heroku@0.0.10. # Invoke the Heroku orb
+  heroku: circleci/heroku@1.0.1 # Invoke the Heroku orb
 workflows:
   heroku_deploy:
     jobs:
