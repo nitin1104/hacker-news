@@ -7,7 +7,7 @@ orbs:
   heroku: circleci/heroku@1.0.1 # Invoke the Heroku orb
 workflows:
   heroku_deploy:
-  environment:
+    environment:
       HEROKU_APP: "sleepy-refuge-55486" # define env var $HEROKU_APP
     jobs:
       - build
