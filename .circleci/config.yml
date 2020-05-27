@@ -7,6 +7,8 @@ orbs:
   heroku: circleci/heroku@1.0.1 # Invoke the Heroku orb
 workflows:
   heroku_deploy:
+  environment:
+      HEROKU_APP: "sleepy-refuge-55486" # define env var $HEROKU_APP
     jobs:
       - build
       - test
@@ -18,10 +20,7 @@ workflows:
             branches:
               only: sequential-branch-filter
   version: 2
-  build_and_test:
-    jobs:
-      - build
-      - test
+ 
 jobs:
   build:
     executor: node
