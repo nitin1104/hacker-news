@@ -17,8 +17,12 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
+  "engines": {
+    "node": "10.x"
+  },
   "scripts": {
     "start": "nodemon server/index",
+    "start-prod": "node server/index",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
