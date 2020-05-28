@@ -1,0 +1,45 @@
+.header-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: "#ff6600";
+  .logo {
+    border: 2px solid "#ffffff";
+    width: 18px;
+    height: 18px;
+    background-image: url("/images/y18.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    &-link {
+      padding: 4px;
+    }
+  }
+  .links {
+    display: flex;
+  }
+  .link {
+    padding: 5px 6px;
+    position: relative;
+    &:last-child::before {
+      content: " | ";
+      position: absolute;
+      left: 0px;
+      top: 10px;
+      font-size: 0.6rem;
+      color: #333;
+    }
+    button {
+      font-size: 1rem;
+      color: "#ffffff";
+    }
+    border: none;
+    background: "#ff6600";
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

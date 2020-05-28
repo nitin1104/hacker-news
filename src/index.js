@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './global-styles/global-styles.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.hydrate(<App />, document.getElementById('root'))
+ReactDOM.hydrate(
+    <div>
+        <App news={window.newsData}/>
+    </div>, 
+    document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
