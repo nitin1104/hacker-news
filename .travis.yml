@@ -12,6 +12,6 @@ script:
 
 deploy:
   provider: heroku
-  api_key: TL8GUteLruEx4i4ELX2Y-Q
+  api_key: $HEROKU_TOKEN
   app:
     master: news-ssr
