@@ -4,11 +4,10 @@ import fs from 'fs'
 import express from 'express'
 import React from 'react'
 import ReactDOMServer from 'react-dom/server'
-import fetch from 'node-fetch';
 
 import App from '../src/App'
 
-const PORT = 8080
+const PORT = process.env.PORT || 8080
 const app = express()
 
 const router = express.Router()
