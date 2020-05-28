@@ -14,4 +14,4 @@ deploy:
   provider: heroku
   api_key: TL8GUteLruEx4i4ELX2Y-Q
   app:
-    master: news-hacker
+    master: news-ssr
