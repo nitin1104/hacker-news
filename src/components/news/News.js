@@ -14,7 +14,6 @@ function News (props) {
                       return (
                         <li key={item.objectID} className="news-block">
                             <div className="comments">{item.num_comments}</div>
-                            <div>{item.points}</div>
                             <div className="votes">
                                 <span className="vote">{item.points}</span>
                                 <button className="vote-icon">upvote</button>
