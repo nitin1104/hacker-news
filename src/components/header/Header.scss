@@ -1,15 +1,14 @@
 .header-bar {
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 9999;
-  background-color: "#ff6600";
+  background-color: #ff6600;
   .logo {
-    border: 2px solid "#ffffff";
+    border: 2px solid #ffffff;
     width: 18px;
     height: 18px;
-    background-image: url("/images/y18.gif");
+    background-image: url("../../y18.gif");
     background-repeat: no-repeat;
     background-position: center center;
     display: block;
@@ -33,10 +32,12 @@
     }
     button {
       font-size: 1rem;
-      color: "#ffffff";
+      color: #ffffff;
+      background: none;
+      border: none;
     }
     border: none;
-    background: "#ff6600";
+    background: #ff6600;
     cursor: pointer;
     &:hover {
       text-decoration: underline;

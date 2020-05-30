@@ -5,9 +5,9 @@ function Header () {
     return (
         <div className="header-bar">
             <ul className="links">
-                {/* <li className="logo-link">
-                    <span className="logo"><img src="images/y18.gif" alt="Site Logo" /></span>
-                </li> */}
+                <li className="logo-link">
+                    <span className="logo"><img src="./y18.gif" alt="Logo" /></span>
+                </li>
                 <li className="link">
                     <button>top</button>
                 </li>
