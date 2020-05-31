@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
 import News from './components/news/News'
 import Header from './components/header/Header'
