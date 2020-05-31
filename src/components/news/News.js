@@ -7,9 +7,9 @@ function News (props) {
     function getShortURL(url) {
         return url.replace(/https?:\/\/(www\.)?/, '').split('/')[0];
     }
-
-    const fetchNewsPage = (page = 0) => {
-        
+    
+    const fetchNewsPage = (page) => {
+        props.onPagination(page)
     };
 
     const totalPages = props.newsData.nbPages;
@@ -43,5 +43,6 @@ function News (props) {
         </Fragment>
     )
 }
+
 
 export default News;

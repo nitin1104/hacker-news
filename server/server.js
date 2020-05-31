@@ -4,7 +4,7 @@ import fs from 'fs'
 import express from 'express'
 import React from 'react'
 import ReactDOMServer from 'react-dom/server'
-import axios from 'axios'
+import axios from 'axios';
 import App from '../src/App'
 import { configureStore } from '../src/redux/store';
 import {Provider} from 'react-redux';

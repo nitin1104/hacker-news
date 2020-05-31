@@ -9,10 +9,16 @@ import { Provider} from 'react-redux';
 
 const store = configureStore(window.newsData);
 
+const pageChanged = (latestNews)=> {
+    store.dispatch({
+        type: 'FETCH_NEWS',
+        payload: latestNews
+    })
+}
 
 ReactDOM.hydrate(
                 <Provider store = {store}>
-                    <App/>
+                    <App onPageChange = {pageChanged}/>
                 </Provider>,document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change

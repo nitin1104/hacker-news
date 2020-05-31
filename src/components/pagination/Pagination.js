@@ -2,6 +2,7 @@ import React from 'react';
 import './Pagination.scss';
 
 export default function Pagination(props) {
+    
     const prev = () => {
         props.onPaginate(props.currentPage - 1);
     }
