@@ -10,7 +10,7 @@ function App(props) {
   
   function fetchNewsOnPagination (whichPage) {
     
-    axios.get('http://hn.algolia.com/api/v1/search?page=' + whichPage)
+    axios.get('https://hn.algolia.com/api/v1/search?page=' + whichPage)
       .then(newsData => {
         props.onPageChange(newsData.data);
       })

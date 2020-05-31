@@ -15,7 +15,7 @@ const router = express.Router()
 const store = configureStore();
 
 const serverRenderer = (req, res, next) => {
-  axios.get('http://hn.algolia.com/api/v1/search', {params: req.query})
+  axios.get('https://hn.algolia.com/api/v1/search', {params: req.query})
     .then(news => {
       fs.readFile(path.resolve('./build/index.html'), 'utf8', (err, data) => {
         if (err) {
