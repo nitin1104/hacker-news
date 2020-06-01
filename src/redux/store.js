@@ -2,14 +2,16 @@ import {createStore, applyMiddleware, compose} from 'redux';
 import thunk from 'redux-thunk';
 
 import rootReducer from './reducer';
- /* eslint-disable */
-const initialState = {
+
+const defaultState = {
     news: {
         hits: []
-    }
+    },
+    hideNewsArray: [],
+    upVoteList: {}
 }
 
-export const configureStore = (initialState = initialState) => createStore(
+export const configureStore = (initialState = defaultState) => createStore(
     rootReducer,
     initialState,
     compose(

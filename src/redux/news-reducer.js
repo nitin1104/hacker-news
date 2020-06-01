@@ -9,7 +9,7 @@ export default function news(news = {}, action) {
         case 'HIDE_NEWS':
             return {
                 ...news,
-                hits: (news.hits || []).filter(item => item.objectID !== action.payload)
+                hits: (news.hits).filter(item => item.objectID !== action.payload)
             };
         case 'UPVOTE':
             return {
@@ -18,7 +18,7 @@ export default function news(news = {}, action) {
                     if (item.objectID === action.payload.id) {
                         return {
                             ...item,
-                            _upvotes: action.payload.upvotes
+                            points: action.payload.count
                         };
                     }
 

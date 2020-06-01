@@ -6,7 +6,7 @@ function Header () {
         <div className="header-bar">
             <ul className="links">
                 <li className="logo-link">
-                    <span className="logo"><img src="./y18.gif" alt="Logo" /></span>
+                    <span className="logo">Y</span>
                 </li>
                 <li className="link">
                     <button>top</button>
