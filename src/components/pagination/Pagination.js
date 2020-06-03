@@ -15,9 +15,8 @@ export default function Pagination(props) {
 
     return (
         <div className="pagination-container">
-            <p className="pagination-info">Showing Page {page} of {props.totalPages}</p>
             <div>
-                <button className="pagination-cta" onClick={prev} disabled={page === 1}>Prev</button>
+                <button className="pagination-cta" onClick={prev} disabled={page === 1}>Previous</button> |
                 <button className="pagination-cta" onClick={next} disabled={page >= props.totalPages}>Next</button>
             </div>
         </div>

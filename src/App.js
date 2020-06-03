@@ -1,24 +1,29 @@
 import React from 'react';
-import './App.css';
 import News from './components/news/News'
 import Header from './components/header/Header'
 import { connect } from 'react-redux';
 import axios from 'axios';
+import MyChart from './components/Chart/MyChart';
 
 function App(props) {
 
   const {news} = props
+
+  let newData = []; 
+  for (var i = 0; i < news.hits.length; i++) { 
+    newData[i] = { 
+      objectID: news.hits[i].objectID? news.hits[i].objectID : null , points: news.hits[i].points ? news.hits[i].points : null 
+    };
+  } 
+
   return (
     <div className="App">
       <Header />
       <News newsData = {news} fetchNews={props.fetchNews} hideNews={props.hideNews} upVote={props.upVote}/>
+      <MyChart data={newData}/>
     </div>
   );
 }
-
-// const mapStateToProps = (state) => ({
-//   news: state.news
-// })
 
 function mapStateToProps(state) {
 

@@ -37,6 +37,7 @@ function News (props) {
                             </div>
                             <div className="title">{item.title}</div>
                             <div className="additional-info">{item.url ? '(' + getShortURL(item.url) + ')' : ''}</div>
+                            <div className="additional-info">by <span className="author">{item.author}</span></div>
                             <div className="additional-info">Create : {Moment(item.created_at).fromNow()}</div>
                             <div className="hide-info">
                                 <button className="hide-link" onClick={() => hideThisNews(item.objectID)}>[ Hide ]</button>

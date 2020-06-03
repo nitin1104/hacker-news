@@ -6,9 +6,7 @@ import rootReducer from './reducer';
 const defaultState = {
     news: {
         hits: []
-    },
-    hideNewsArray: [],
-    upVoteList: {}
+    }
 }
 
 export const configureStore = (initialState = defaultState) => createStore(
