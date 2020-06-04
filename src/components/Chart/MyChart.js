@@ -8,7 +8,7 @@ export default function MyChart (props) {
         <XAxis dataKey="objectID" />
         <YAxis tickCount={7} />
         <Tooltip />
-        <CartesianGrid />
+        <CartesianGrid width={1200}/>
         <Bar dataKey="points" fill="#ff7300" radius={[5, 5, 5, 5]} />
         <ReferenceLine type="horizontal" value={0} stroke="#666" />
       </BarChart>

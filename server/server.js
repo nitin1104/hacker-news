@@ -38,6 +38,9 @@ const serverRenderer = (req, res, next) => {
     })
   })
 }
+// app.get('*', req, res => {
+  
+// })
 
 router.use('^/$', serverRenderer)
 
