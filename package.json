@@ -11,7 +11,6 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
     "express": "^4.17.1",
-    "http2": "^3.3.7",
     "ignore-styles": "^5.0.1",
     "moment": "^2.26.0",
     "node-fetch": "^2.6.0",
@@ -24,7 +23,6 @@
     "recharts": "^1.8.5",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "spdy": "^4.0.2",
     "styled-components": "^5.1.1"
   },
   "engines": {

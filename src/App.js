@@ -3,7 +3,7 @@ import News from './components/news/News'
 import Header from './components/header/Header'
 import { connect } from 'react-redux';
 import axios from 'axios';
-import MyChart from './components/Chart/MyChart';
+import MyChart from './components/chart/lineChart';
 
 function App(props) {
 

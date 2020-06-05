@@ -13,12 +13,6 @@ const PORT = process.env.PORT || 3100
 const app = express()
 const router = express.Router()
 const store = configureStore();
-const spdy = require('spdy');
-
-const options = {
-  key: fs.readFileSync(path.resolve('./server/server.key')),
-  cert:  fs.readFileSync(path.resolve('./server/server.crt'))
-}
 
 const serverRenderer = (req, res, next) => {
   axios.get('https://hn.algolia.com/api/v1/search', {params: req.query})
@@ -56,6 +50,6 @@ router.use(
 
 app.use(router)
 
-spdy.createServer(options, app).listen(PORT, () => {
-    console.log(`SSR running on port ${PORT}`)
-  });
+app.listen(PORT, () => {
+  console.log(`SSR running on port ${PORT}`)
+})
